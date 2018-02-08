@@ -1,7 +1,7 @@
 {
   "name": "temp-es6",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
   "scripts": {
     "start": "babel-node --presets es2015 app.js",

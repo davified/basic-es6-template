@@ -8,8 +8,9 @@
 
 ### What this template does to allow us to run ES6
 
-- installs `babel-cli` and `babel-preset-es2015`
-- has a custom `yarn start` script which runs: `babel-node --presets es2015 file2.js` (note the use of `babel-node` instead of `node`)
+In `package.json`, we:
+- added `babel-cli` and `babel-preset-es2015`
+- added `start` script which runs: `babel-node --presets es2015 file2.js` (note the use of `babel-node` instead of `node`)
 
 ```javascript
 "scripts": {

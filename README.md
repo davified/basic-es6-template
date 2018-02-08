@@ -4,19 +4,16 @@
 - Fork the repo
 - clone the repo and `cd` into basic-es6-template`
 - run `yarn install`
-- run `yarn start` and you should see 'hello world' printed to the console 
+- run `yarn start` and you should see '3' printed to the console 
 
-### What this template does to allow us to run ES6
-
-In `package.json`, we:
-- added `babel-cli` and `babel-preset-es2015`
-- added `start` script which runs: `babel-node --presets es2015 file2.js` (note the use of `babel-node` instead of `node`)
+### What this template does to allow us to run Javascripts in ES6
 
 ```javascript
 "scripts": {
-    "start": "babel-node --presets es2015 file2.js",  // added for allowing ES6 when we run 'yarn start'
-    "test": "jest",                  // added for allowing ES6 when we run 'yarn test'
-    "test:watch": "jest --watch"     // added for allowing ES6 when we run 'yarn test'
+    "start": "babel-node --presets es2015 app.js",  // added for allowing ES6 modules when we run 'yarn start'
+    "test": "jest",                  // run tests with jest
+    "test:watch": "jest --watch"     // watch the changes in codes and run tests automatically
+    "test:coverage": "jest --coverage"     // test coverage of the codes
   },
   "dependencies": {
     "babel-cli": "^6.26.0",                           // added for allowing ES6 when we run 'yarn start'
@@ -28,12 +25,12 @@ In `package.json`, we:
     "jest": "^22.1.4"
   },
   "babel": {
-    "presets": ["env"]               // added for allowing ES6 when we run 'yarn test'
+    "presets": ["env"]               // added for allowing ES6 code syntax
   }
 ```
 
 ### Try it!
-- Run `node file2.js` and you will see an error, because `file2.js` is using the ES6 import syntax
+- Run `node app.js` and you will see an error, because `app.js` is using the ES6 import syntax
 - Run `yarn start` instead, and everything will run fine.
 
 ---

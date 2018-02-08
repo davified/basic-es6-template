@@ -11,7 +11,7 @@
 - installs `babel-cli` and `babel-preset-es2015`
 - has a custom `yarn start` script which runs: `babel-node --presets es2015 file2.js` (note the use of `babel-node` instead of `node`)
 
-```json
+```javascript
 "scripts": {
     "start": "babel-node --presets es2015 file2.js",  // added for allowing ES6 when we run 'yarn start'
     "test": "jest",                  // added for allowing ES6 when we run 'yarn test'
